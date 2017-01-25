@@ -8,14 +8,13 @@ Simple pagination module fo Angular 1 and ui-router.
 2. Add mavi-paginator module script.
 3. Add "paginator" class to the element which is going to contain the pagination elements.
 4. To have it working you should pass from controller to "paginate" attribute the object which contains the information of:
-* Total pages of the full pagination
 * Items per page (example 10 items per page)
 * Total items 
 
 #####Object:
 
 ```
-"paginate": {"totalPages":39,"itemsPerPage":10,"totalItems":387};
+"paginate": {"itemsPerPage":10,"totalItems":387};
 ```
 
 ###Usage
@@ -41,7 +40,6 @@ App module
     //Controller
     App.controller('theController', ['$scope', function($scope) {
         $scope.paginate = {
-            "totalPages":39,
             "itemsPerPage":10,
             "totalItems":387
         };

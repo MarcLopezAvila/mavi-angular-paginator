@@ -1,7 +1,7 @@
 /*
 * Mavi Angular Paginator
 * 2016
-* Version: 1.0.3
+* Version: 1.0.4
 * */
 
 angular.module('mavi-paginator', []).directive('paginator', ['$state','$stateParams', function ($state, $stateParams) {
@@ -14,9 +14,8 @@ angular.module('mavi-paginator', []).directive('paginator', ['$state','$statePar
         link: function(scope) {
             scope.$watch('paginate', function() {
 
-                if(scope.paginate && scope.paginate['totalPages'] > 1) {
-                    var paginateObj  = scope.paginate,
-                        listItems    = paginateObj.totalPages,
+                if(scope.paginate && Math.ceil(scope.paginate['totalItems'] / scope.paginate['itemsPerPage']) > 1) {
+                    var listItems    = Math.ceil(scope.paginate['totalItems'] / scope.paginate['itemsPerPage']),
                         setToMiddle  = false,
                         count        = 0;
 
