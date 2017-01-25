@@ -1,17 +1,17 @@
 <ul ng-if="paginator.length">
     <li>
         <a ng-click="prevPage()" ng-class="{'disabled': prevDisabled}">
-            <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+            <
         </a>
     </li>
 
     <li ng-repeat="page in paginator track by $index">
-        <a ui-sref="{{pageState}}({page: page})" class="color-secondary" ng-class="{'active bg-secondary': currentPage === page}">{{page}}</a>
+        <a ui-sref="{{pageState}}({page: page})" ng-class="{'active': currentPage === page}">{{page}}</a>
     </li>
 
     <li>
         <a ng-click="nextPage()" ng-class="{'disabled': nextDisabled}">
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            >
         </a>
     </li>
 </ul>

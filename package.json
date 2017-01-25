@@ -1,6 +1,6 @@
 {
     "name": "mavi-angular-paginator",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Simple Angular paginator",
     "author": "Marc López Ávila",
     "license": "ISC",
@@ -10,5 +10,9 @@
         "directive",
         "paginator",
         "simple"
-    ]
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/marclopez10/mavi-angular-paginator.git"
+    }
 }

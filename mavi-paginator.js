@@ -1,7 +1,7 @@
 /*
 * Mavi Angular Paginator
 * 2016
-* Version: 1.0.2
+* Version: 1.0.3
 * */
 
 angular.module('mavi-paginator', []).directive('paginator', ['$state','$stateParams', function ($state, $stateParams) {
