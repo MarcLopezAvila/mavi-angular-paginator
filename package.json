@@ -1,0 +1,14 @@
+{
+    "name": "mavi-angular-paginator",
+    "version": "1.0.2",
+    "description": "Simple Angular paginator",
+    "author": "Marc López Ávila",
+    "license": "ISC",
+    "keywords": [
+        "angular",
+        "javascript",
+        "directive",
+        "paginator",
+        "simple"
+    ]
+}
