@@ -11,13 +11,13 @@ Simple pagination module fo Angular 1 and ui-router.
 * Items per page (example 10 items per page)
 * Total items 
 
-#####Object:
+##### Object:
 
 ```
 "paginate": {"itemsPerPage":10,"totalItems":387};
 ```
 
-###Usage
+### Usage
 
 App module
 
